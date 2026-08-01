@@ -1,5 +1,8 @@
 # Freesound Agent Skill
 
+[![Tests](https://github.com/MaksPyn/freesound-skill/actions/workflows/tests.yml/badge.svg)](https://github.com/MaksPyn/freesound-skill/actions/workflows/tests.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Search, inspect, preview, download, and correctly credit Creative Commons audio from [Freesound](https://freesound.org/) through its current APIv2.
 
 This repository contains both:
@@ -333,16 +336,13 @@ node scripts/freesound.js search "your query" --no-cache
 
 ```text
 freesound-skill/
+├── .github/                              CI and security policy
 ├── SKILL.md                              Agent instructions and workflow
 ├── scripts/freesound.js                  Standalone CLI
-├── references/
-│   ├── api-reference.md                  API endpoints and fields
-│   ├── authentication.md                 API key and OAuth guidance
-│   ├── examples.md                       More complete workflows
-│   ├── generative-ai.md                  Uploader preferences and datasets
-│   ├── licenses-and-attribution.md       API terms and Creative Commons
-│   └── search-and-filters.md             Solr and descriptor searches
-└── tests/freesound.test.js               Mocked unit/integration tests
+├── references/                           API, licensing, and usage guides
+├── tests/freesound.test.js               Mocked unit/integration tests
+├── CONTRIBUTING.md                       Contribution guide
+└── LICENSE                               MIT license
 ```
 
 ## Test the project
@@ -364,3 +364,11 @@ The tests use local mock servers and small generated files. They do not consume 
 - [`references/examples.md`](references/examples.md) — additional examples
 
 Before shipping an integration, review Freesound's [current API terms](https://freesound.org/help/tos_api/).
+
+## Contributing
+
+Contributions are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening an issue or pull request. Report vulnerabilities according to the [security policy](.github/SECURITY.md).
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). Freesound audio remains subject to each sound's own license and Freesound's API terms.
