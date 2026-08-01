@@ -1,0 +1,15 @@
+# Credentials and local environment
+.env
+.env.*
+*.env
+credentials.*
+
+# Downloads and temporary files
+freesound-assets/
+*.part
+
+# Development artifacts
+node_modules/
+coverage/
+.DS_Store
+Thumbs.db
